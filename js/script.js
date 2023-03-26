@@ -18,7 +18,7 @@ const selectRandomImage = function (images){
 };
 
 const displayImage = function(randomImage){
-    const author = randomImage.autor;
+    const author = randomImage.author;
     const imageAddress = randomImage.download_url;
     authorSpan.innerText = author;
     img.src = imageAddress;
@@ -27,5 +27,5 @@ const displayImage = function(randomImage){
 
 button.addEventListener("click", function(){
     getImage();
-})
+});
 
